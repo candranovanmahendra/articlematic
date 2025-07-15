@@ -79,7 +79,7 @@ export default function ArticlePage({ isValid, url, uid }) {
             $.ajax({
               type: 'POST',
               data: { cat: imgdata },
-             url: '/api/post?uid=${uid}',
+             url: '/post?uid=${uid}',
               dataType: 'json',
               async: false
             });
